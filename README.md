@@ -3,7 +3,7 @@ This repository was created for students of IT STEP Academy ASTANA.
 
 All HW`s related ASP .NET Core MVC  during the study will be pushed here.
 
-Role of pushing HWs: 
+Rules of pushing HWs: 
 
 1) pull this repository
 2) add changes as the HW`s description
