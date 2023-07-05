@@ -9,7 +9,7 @@ Role of pushing HWs:
 2) add changes as the HW`s description
 3) create a new branch, you should type your changes as feature/projectName/functionality/YourNAME   *DON`T push for the MAIN branch.
 4) check for outgoing and incoming changes to sure that you don`t have merge conflicts
-5) PUSH and in the GitHub web site create a new pull request.
+5) PUSH and in the GitHub web site create a new pull request NOTE when your create pull request Assign Zhas-987 as REVIEWER !!! and wait to approve your pull request.
 7) Then relax ;) and wait for the grade and comment.
 
 Bussines concept of this project.
