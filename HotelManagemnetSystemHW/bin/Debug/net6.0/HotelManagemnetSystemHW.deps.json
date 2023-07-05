@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HotelManagemnetSystemHW/1.0.0": {
+        "runtime": {
+          "HotelManagemnetSystemHW.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HotelManagemnetSystemHW/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
