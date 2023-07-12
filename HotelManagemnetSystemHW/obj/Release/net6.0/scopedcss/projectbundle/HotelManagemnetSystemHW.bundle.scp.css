@@ -1,3 +1,52 @@
+/* _content/HotelManagemnetSystemHW/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-7oipm15hbh] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-7oipm15hbh] {
+  color: #0077cc;
+}
+
+.btn-primary[b-7oipm15hbh] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-7oipm15hbh], .nav-pills .show > .nav-link[b-7oipm15hbh] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-7oipm15hbh] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-7oipm15hbh] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-7oipm15hbh] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-7oipm15hbh] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-7oipm15hbh] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
 /* _content/HotelManagemnetSystemHW/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -41,6 +90,104 @@ button.accept-policy[b-a3vr02jtny] {
 }
 
 .footer[b-a3vr02jtny] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/HotelManagemnetSystemHW/Views/Shared/_ManagerLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-zq3ink4j3g] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-zq3ink4j3g] {
+  color: #0077cc;
+}
+
+.btn-primary[b-zq3ink4j3g] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-zq3ink4j3g], .nav-pills .show > .nav-link[b-zq3ink4j3g] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-zq3ink4j3g] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-zq3ink4j3g] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-zq3ink4j3g] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-zq3ink4j3g] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-zq3ink4j3g] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/HotelManagemnetSystemHW/Views/Shared/_UserLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-7piclaa0i3] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-7piclaa0i3] {
+  color: #0077cc;
+}
+
+.btn-primary[b-7piclaa0i3] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-7piclaa0i3], .nav-pills .show > .nav-link[b-7piclaa0i3] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-7piclaa0i3] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-7piclaa0i3] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-7piclaa0i3] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-7piclaa0i3] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-7piclaa0i3] {
   position: absolute;
   bottom: 0;
   width: 100%;
