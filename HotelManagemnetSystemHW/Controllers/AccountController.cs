@@ -8,5 +8,20 @@ namespace HotelManagemnetSystemHW.Controllers
     {
       return View();
     }
-  }
+
+    public IActionResult Login()
+    {
+        return RedirectToAction("Index", "Home");
+    }
+
+    public IActionResult Register()
+    {
+        return RedirectToAction("Index", "Home");
+    }
+
+    public IActionResult Logout()
+    {
+        return RedirectToAction("Index", "Home");
+    }
+    }
 }
