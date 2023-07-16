@@ -9,9 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelManagemnetSystemHW
 build_property.RootNamespace = HotelManagemnetSystemHW
-build_property.ProjectDir = C:\Users\assai\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\
+build_property.ProjectDir = C:\HW\С#\hw\hw_01\HotelManagemnetSystemHW\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\assai\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW
+build_property.MSBuildProjectDirectory = C:\HW\С#\hw\hw_01\HotelManagemnetSystemHW
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/History/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Manager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Rooms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HW/С\#/hw/hw_01/HotelManagemnetSystemHW/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

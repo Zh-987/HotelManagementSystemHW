@@ -1,0 +1,75 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Комнаты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .room-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .room-number {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .room-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .room-price {
+            font-size: 18px;
+            color: #777;
+        }
+    </style>
+ 
+    <script>
+        function goToRoom(roomNumber) {
+            window.location.href = '/Room/Index?roomNumber=' + roomNumber;
+        }
+    </script>
+</head>
+<body>
+    <h1>Комнаты</h1>
+
+    @foreach (var room in Model)
+    {
+        <div class="room-container" onclick="goToRoom('@room.Number')">
+            <p class="room-number">Номер комнаты: @room.Number</p>
+            <img class="room-image" src="@room.Image" alt="Изображение комнаты" />
+            <p class="room-price">Цена: @room.Price</p>
+        </div>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <p>Нет комнат.</p>
+    }
+</body>
+</html>

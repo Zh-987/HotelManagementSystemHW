@@ -1,0 +1,52 @@
+﻿@model HotelManagemnetSystemHW.Models.Room
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Информация о комнате</title>
+    <style>
+        /* Стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .room-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .room-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .room-number {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .room-price {
+            font-size: 18px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="room-container">
+        <h2 class="room-number">Комната № @Model.Number</h2>
+        <img class="room-image" src="@Model.Image" alt="Фото комнаты" />
+        <p class="room-price">Цена: @Model.Price тенге</p>
+    </div>
+</body>
+</html>
