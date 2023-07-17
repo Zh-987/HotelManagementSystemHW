@@ -11,12 +11,12 @@ namespace hw_1.Controllers
 
         public IActionResult Login()
         {
-            return RedirectToAction("Index", "Home");
+            return View();
         }
 
         public IActionResult Register()
         {
-            return RedirectToAction("Index", "Home");
+            return View();
         }
         public IActionResult Logout()
         {
