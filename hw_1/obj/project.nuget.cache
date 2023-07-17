@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vzDHvqK/X5/TLfEQZkDp4cpcpKds3wJfWAXfq1nkNh+kSFNpHJSo3vBRb5V2eoCGYMpEoHI8ExO7E2vElBzBOQ==",
+  "dgSpecHash": "tkKR01wlQkq3yr2t1plmK5mciISPpTYe5D8QP+B+qxVAlWAR3PYOIN9txWCcGN5dVIR7745u3NQ3Dr10rz/1Wg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wildb\\source\\repos\\hw_1\\hw_1\\hw_1.csproj",
+  "projectFilePath": "C:\\Users\\wildb\\source\\repos\\HotelManagementSystemHW\\hw_1\\hw_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wildb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\wildb\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "HttpHeaders Page";
+    Layout = "/Views/Shared/Layouts/_LayoutAdmin.cshtml";
+}
+
+@model Dictionary<string, string>
+
+<h1 class="text-center">HttpHeaders Page</h1>
+
+
+<div>
+    @foreach (var header in Model)
+    {
+        <div>
+            <h1>@header.Key</h1>
+            <h2>@header.Value</h2>
+        </div>
+    }
+</div>

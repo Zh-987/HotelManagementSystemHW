@@ -2459,11 +2459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wildb\\source\\repos\\hw_1\\hw_1\\hw_1.csproj",
+      "projectUniqueName": "C:\\Users\\wildb\\source\\repos\\HotelManagementSystemHW\\hw_1\\hw_1.csproj",
       "projectName": "hw_1",
-      "projectPath": "C:\\Users\\wildb\\source\\repos\\hw_1\\hw_1\\hw_1.csproj",
+      "projectPath": "C:\\Users\\wildb\\source\\repos\\HotelManagementSystemHW\\hw_1\\hw_1.csproj",
       "packagesPath": "C:\\Users\\wildb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wildb\\source\\repos\\hw_1\\hw_1\\obj\\",
+      "outputPath": "C:\\Users\\wildb\\source\\repos\\HotelManagementSystemHW\\hw_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wildb\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5,4 +5,13 @@
     Layout = "/Views/Shared/Layouts/_LayoutAdmin.cshtml";
 
 }
-<h1>Hello, Index</h1>
+@model List<string> 
+
+<div>
+    @foreach (var value in Model)
+    {
+        <div>
+            @value
+        </div>
+    }
+</div>
