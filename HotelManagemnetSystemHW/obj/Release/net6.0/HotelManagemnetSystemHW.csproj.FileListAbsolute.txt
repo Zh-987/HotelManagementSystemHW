@@ -29,6 +29,6 @@ C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\R
 C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\projectbundle\HotelManagemnetSystemHW.bundle.scp.css
 C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\HotelManagemnetSystemHW.genruntimeconfig.cache
 C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\ref\HotelManagemnetSystemHW.dll
-C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
-C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\_UserLayout.cshtml.rz.scp.css
-C:\Users\User\Source\Repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\_ManagerLayout.cshtml.rz.scp.css
+C:\Users\User\source\repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\Layouts\_AdminLayout.cshtml.rz.scp.css
+C:\Users\User\source\repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\Layouts\_ManagerLayout.cshtml.rz.scp.css
+C:\Users\User\source\repos\HotelManagementSystemHW\HotelManagemnetSystemHW\obj\Release\net6.0\scopedcss\Views\Shared\Layouts\_UserLayout.cshtml.rz.scp.css
