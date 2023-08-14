@@ -1,0 +1,10 @@
+﻿@model HotelManagemnetSystemHW.Models.User
+
+<!-- Форма для входа -->
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.Username, new { placeholder = "Username" })
+    @Html.PasswordFor(m => m.Password, new { placeholder = "Password" })
+    @Html.CheckBoxFor(m => m.RememberMe)
+    <button type="submit">Login</button>
+}

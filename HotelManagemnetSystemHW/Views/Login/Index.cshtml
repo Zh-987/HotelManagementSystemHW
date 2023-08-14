@@ -1,0 +1,7 @@
+﻿@model HotelManagemnetSystemHW.Models.User
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.Partial("_LoginPartial")
+    <a href="@Url.Action("Register", "Login")">Register</a>
+}

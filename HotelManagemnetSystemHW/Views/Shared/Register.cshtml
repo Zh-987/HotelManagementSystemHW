@@ -1,0 +1,9 @@
+﻿@model HotelManagemnetSystemHW.Models.User
+
+@using (Html.BeginForm("Register", "Login", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.Username, new { placeholder = "Username" })
+    @Html.PasswordFor(m => m.Password, new { placeholder = "Password" })
+    @Html.DropDownListFor(m => m.RoleId, ViewBag.Roles as SelectList, "Select Role")
+    <button type="submit">Register</button>
+}
