@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelManagemnetSystemHW.Controllers
+namespace HotelManagemnetSystemHW.Areas.User.Controllers
 {
-  public class UserController : Controller
-  {
-    public IActionResult Index()
+    [Area("User")]
+    public class UserController : Controller
     {
-      return View();
+        [Route("{area}")]
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
-  }
 }

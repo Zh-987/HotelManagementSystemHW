@@ -26,7 +26,8 @@ namespace HotelManagemnetSystemHW.Controllers
     [HttpGet]
     public IActionResult Login()
     {
-        return View();
+        //return View();
+        return PartialView();
     }
 
     [HttpPost]
@@ -50,7 +51,8 @@ namespace HotelManagemnetSystemHW.Controllers
         }
         else
         {
-            return View();
+            //return View();
+            return PartialView();
         }
     }
 
@@ -58,7 +60,8 @@ namespace HotelManagemnetSystemHW.Controllers
     public IActionResult Register()
     {
         //return RedirectToAction("Index", "Home");
-        return View();
+        //return View();
+        return PartialView();
     }
 
     [HttpPost]
@@ -82,7 +85,8 @@ namespace HotelManagemnetSystemHW.Controllers
         }
         else
         {
-            return View();
+            //return View();
+            return PartialView();
         }
     }
 

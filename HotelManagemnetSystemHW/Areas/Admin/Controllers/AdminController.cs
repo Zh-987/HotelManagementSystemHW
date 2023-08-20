@@ -1,22 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelManagemnetSystemHW.Controllers
+namespace HotelManagemnetSystemHW.Areas.Admin.Controllers
 {
-  public class AdminController : Controller
-  {
-    public IActionResult Index()
+    [Area("Admin")]
+    public class AdminController : Controller
     {
-      return View();
-    }
-
-    public IActionResult HttpHeaders()
-    {
-        Dictionary<string, string> htmlHeaders = new Dictionary<string, string>();
-        foreach (var header in Request.Headers)
+        [Route("{area}")]
+        public IActionResult Index()
         {
-           htmlHeaders.Add(header.Key, header.Value);
+            return View();
         }
-        return View(htmlHeaders);
-    }
+
+        public IActionResult HttpHeaders()
+        {
+            Dictionary<string, string> htmlHeaders = new Dictionary<string, string>();
+            foreach (var header in Request.Headers)
+            {
+                htmlHeaders.Add(header.Key, header.Value);
+            }
+            return View(htmlHeaders);
+        }
     }
 }

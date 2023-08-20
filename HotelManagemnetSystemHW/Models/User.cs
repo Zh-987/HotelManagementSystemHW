@@ -9,7 +9,7 @@
 
     public class User
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Fullname { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
@@ -20,7 +20,7 @@
         public string Country { get; set; }
         public RoleEnum Role { get; set; }
 
-        public User(int id, string fullname, string username, string password, DateTime dateOfBirth, string sex, string email, string phone, string country, RoleEnum role = RoleEnum.user)
+        public User(string id, string fullname, string username, string password, DateTime dateOfBirth, string sex, string email, string phone, string country, RoleEnum role = RoleEnum.user)
         {
             Id = id;
             Fullname = fullname;
