@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace HotelManagemnetSystemHW.Infrastructure
 {
-    public class RoomsFeaturesBinder : IModelBinder
+    public class RoomsFeaturesModelBinder : IModelBinder
     {
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {

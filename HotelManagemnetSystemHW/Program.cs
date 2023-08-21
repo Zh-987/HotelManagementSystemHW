@@ -1,7 +1,16 @@
+using HotelManagemnetSystemHW.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1.1 Добавить сервис AddControllersWithViews ()
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(
+        opts => { 
+            opts.ModelBinderProviders.Insert(0, new HotelModelBinderProvider());
+            opts.ModelBinderProviders.Insert(1, new ImageModelBinderProvider());
+            opts.ModelBinderProviders.Insert(2, new ReservationModelBinderProvider());
+            opts.ModelBinderProviders.Insert(3, new RoomModelBinderProvider());
+            opts.ModelBinderProviders.Insert(4, new RoomsFeaturesModelBinderProvider());
+        });
 
 // 1.4 Добавить возможость использование рейзер движка
 builder.Services.AddRazorPages();
