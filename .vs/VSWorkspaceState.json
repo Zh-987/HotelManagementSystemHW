@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\hw_1",
+    "\\hw_1\\Controllers"
   ],
-  "SelectedNode": "\\C:\\Users\\assai\\Source\\Repos\\HotelManagementSystemHW",
+  "SelectedNode": "\\hw_1\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }

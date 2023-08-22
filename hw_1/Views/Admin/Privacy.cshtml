@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "/Views/Shared/Layouts/_LayoutAdmin.cshtml";
+
+}
+@model List<string> 
+
+<div>
+    @foreach (var value in Model)
+    {
+        <div>
+            @value
+        </div>
+    }
+</div>
