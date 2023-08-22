@@ -2,11 +2,10 @@
 
 namespace hw_1.Controllers
 {
-    public class RoomController : Controller
+    public class UserController : Controller
     {
         public IActionResult Index()
         {
-
             return View();
         }
     }

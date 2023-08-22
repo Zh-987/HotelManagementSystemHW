@@ -2,7 +2,7 @@
 
 namespace hw_1.Controllers
 {
-    public class ManagementController : Controller
+    public class ManagerController : Controller
     {
         public IActionResult Index()
         {
