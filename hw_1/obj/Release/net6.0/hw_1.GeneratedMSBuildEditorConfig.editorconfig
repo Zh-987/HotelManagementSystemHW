@@ -16,36 +16,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\wildb\source\repos\HotelManagementSystemHW\hw_1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Home/HttpHeaders.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxIdHRwSGVhZGVycy5jc2h0bWw=
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Admin/HttpHeaders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSHR0cEhlYWRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Admin/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Home/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxfVmlld0ltcG9ydHMuY3NodG1s
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Admin/Views/Admin/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Manager/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Manager/Views/Manager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xNYW5hZ2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Manager/Views/Home/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xIb21lXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/Manager/Views/Manager/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlclxWaWV3c1xNYW5hZ2VyXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/User/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+[C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Areas/User/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wildb/source/repos/HotelManagementSystemHW/hw_1/Views/Account/Index.cshtml]
