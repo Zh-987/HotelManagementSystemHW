@@ -40,11 +40,11 @@ namespace hw_1.Controllers
                 switch ((int)user.Role)
                 {
                     case 1:
-                        return RedirectToAction("Index", "User", new {id = user.Username});
+                        return RedirectToAction("Index", "User", new {id = user.Username, area = "User" });
                     case 2:
-                        return RedirectToAction("Index", "Manager", new { id = user.Username });
+                        return RedirectToAction("Index", "Manager", new { id = user.Username, area= "Manager" });
                     case 3:
-                        return RedirectToAction("Index", "Admin", new { id = user.Username });
+                        return RedirectToAction("Index", "Admin", new { id = user.Username, area = "Admin" });
                     default:
                         return RedirectToAction("Index", "Home", new { id = user.Username });
                 }
