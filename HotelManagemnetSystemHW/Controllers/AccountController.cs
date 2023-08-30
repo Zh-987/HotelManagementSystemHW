@@ -11,9 +11,9 @@ namespace HotelManagemnetSystemHW.Controllers
     public AccountController()
     {
             users = new List<User> {
-            new User(1,"Admin", "admin", "admin123", new DateTime(1990, 01, 01), "Male", "admin@localhost", "87771112223", "Kazakhstan", RoleEnum.admin),
-            new User(1,"Manager", "manager", "manager123", new DateTime(1999, 09, 09), "Female", "manager@localhost", "87112244433", "Russia", RoleEnum.manager),
-            new User(1,"User", "user", "user123", new DateTime(2002, 02, 03), "Male", "user@localhost", "87476663344", "France", RoleEnum.user)
+            new User("1","Admin", "admin", "admin123", new DateTime(1990, 01, 01), "Male", "admin@localhost", "87771112223", "Kazakhstan", RoleEnum.admin),
+            new User("1","Manager", "manager", "manager123", new DateTime(1999, 09, 09), "Female", "manager@localhost", "87112244433", "Russia", RoleEnum.manager),
+            new User("1","User", "user", "user123", new DateTime(2002, 02, 03), "Male", "user@localhost", "87476663344", "France", RoleEnum.user)
 
         };
     }
@@ -78,7 +78,7 @@ namespace HotelManagemnetSystemHW.Controllers
             else
             {
                 int lastId = users.Count();
-                user = new User(lastId+1, fullname, username, password, dateOfBirth, sex, email, phone, country);
+                user = new User(new Guid().ToString(), fullname, username, password, dateOfBirth, sex, email, phone, country);
                 users.Add(user);
                 return RedirectToAction("Login", "Account");
             }

@@ -1,7 +1,76 @@
-﻿@{
+﻿
+@using HotelManagemnetSystemHW.HtmlHelpers
+
+@{
     ViewData["Title"] = "About Page";
 }
+
+
 
 <div class="text-center">
     <h1 class="display-4">About Page</h1>
 </div>
+
+@********************Social Media Links Component********************@
+@{
+    var linksDict = new Dictionary<string, string>() { 
+        ["instagram"] = "http://instagram.com", 
+        ["facebook"] = "http://facebook.com", 
+        ["vk"] = "http://vk.com"
+    };
+}
+<h3>Social Media Links Component</h3>
+<div>
+    <label>Social Media Links:</label>
+    @await Component.InvokeAsync("SocialMediaLinksComponent", new { socialMediaLinks = linksDict})
+</div>
+
+@*******************Footer data Component**************************@
+@{
+    var footerDataDict = new Dictionary<string, string>()
+        {
+            ["companyName"] = "Some Company",
+            ["logoLink"] = "https://img01.flagma.by/upload/logotype/2017/09/28/1068294_0YqAM_big.jpg",
+        };
+}
+<h3>Footer data Component</h3>
+<div>
+    @await Component.InvokeAsync("FooterComponent", new { footerData = footerDataDict})
+</div>
+
+
+@*******************List Tag Helper**************************@
+@{
+    List<string> listItems = new List<string> { "Item1", "Item2", "Item3" };
+}
+<h3>List Tag Helper</h3>
+<div>
+    <list Items="listItems"></list> 
+</div>
+
+@*******************Login Form Tag Helper**************************@
+<h3>Login Form Tag Helper</h3>
+<div>
+    <login-form></login-form>
+</div>
+
+@*******************Table Tag Helper**************************@
+
+@{string[,] tableItems = { { "0", "1", "2" }, { "3", "4", "5" } };}
+<h3>Table Tag Helper</h3>
+<div>
+    <table Items="tableItems"></table>
+</div> 
+
+@*******************List HTML Helper**************************@
+<h3>List HTML Helper</h3>
+@Html.CreateList(listItems)
+
+
+@*******************Login Form HTML Helper**************************@
+<h3>Login Form HTML Helper</h3>
+@Html.CreateLoginForm()
+
+@*******************Table HTML Helper**************************@
+<h3>Table HTML Helper</h3>
+@Html.CreateTable(tableItems)
