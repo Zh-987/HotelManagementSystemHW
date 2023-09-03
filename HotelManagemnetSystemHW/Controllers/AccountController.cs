@@ -1,4 +1,5 @@
-﻿using HotelManagemnetSystemHW.Models;
+﻿using HotelManagemnetSystemHW.Filters;
+using HotelManagemnetSystemHW.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelManagemnetSystemHW.Controllers
@@ -18,18 +19,21 @@ namespace HotelManagemnetSystemHW.Controllers
         };
     }
 
-        public IActionResult Index()
+    [UserAuthorizationFilter("admin", "admin1234")]
+    public IActionResult Index()
     {
       return View();
     }
 
     [HttpGet]
+    [CookiesResourseFilter()]
     public IActionResult Login()
     {
         //return View();
         return PartialView();
     }
 
+    [LoginActionFilter()]
     [HttpPost]
     public IActionResult Login(string login, string password)
     {
