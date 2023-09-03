@@ -7,13 +7,16 @@ namespace HotelManagemnetSystemHW.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Не указано имя")]
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "Имя должно быть от 2 до 50 символов")]
+        [Display(Name = "Название")]
+        [Required(ErrorMessage = "Не указано название")]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Название должно быть от 2 до 50 символов")]
         public string Name { get; set; }
 
+        [Display(Name = "Признак")]
         [Required(ErrorMessage = "Не указан признак")]
         public bool IsMain { get; set; }
 
+        [Display(Name = "ID комнаты")]
         [Required(ErrorMessage = "Не указан ID комнаты")]
         [Range(1, 1000, ErrorMessage = "ID комнаты должен быть от 1 до 1000")]
         public int RoomId { get; set; }
@@ -28,6 +31,5 @@ namespace HotelManagemnetSystemHW.Models
             RoomId = roomId;
             Room = room;
         }
-
     }
 }

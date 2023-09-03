@@ -6,10 +6,12 @@ namespace HotelManagemnetSystemHW.Models
     {
         public int Id { get; set; }
 
+        [Display(Name = "FeatureId")]
         [Required(ErrorMessage = "Не указан FeatureId")]
         [Range(1, 1000, ErrorMessage = "FeatureId должен быть от 1 до 1000")]
         public int FeatureId { get; set; }
 
+        [Display(Name = "ID комнаты")]
         [Required(ErrorMessage = "Не указан ID комнаты")]
         [Range(1, 1000, ErrorMessage = "ID комнаты должен быть от 1 до 1000")]
         public int RoomId { get; set; }

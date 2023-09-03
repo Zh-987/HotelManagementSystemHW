@@ -6,28 +6,34 @@ namespace HotelManagemnetSystemHW.Models
     {
         public int Id { get; set; }
 
+        [Display(Name = "ID пользователя")]
         [Required(ErrorMessage = "Не указано имя")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Имя должно быть от 2 до 50 символов")]
         public string Name { get; set; }
 
+        [Display(Name = "Описание")]
         [Required(ErrorMessage = "Не указано описание")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Описание должно быть от 2 до 255 символов")]
         public string Description { get; set; }
 
+        [Display(Name = "Количество человек")]
         [Required(ErrorMessage = "Не указан количество человек")]
         [Range(1, 30, ErrorMessage = "Количество человек должен быть от 1 до 30")]
         public int PersonCount { get; set; }
 
+        [Display(Name = "Площадь")]
         [Required(ErrorMessage = "Не указана площадь")]
         [Range(1, 300, ErrorMessage = "Площадь должен быть от 1 до 300")]
         public int Square { get; set; }
 
-        [Required(ErrorMessage = "Не указана цена")]
-        [Range(1, 10000, ErrorMessage = "Цена должен быть от 1 до 10000")]
+        [Display(Name = "Стоимость")]
+        [Required(ErrorMessage = "Не указана стоимость")]
+        [Range(1, 10000, ErrorMessage = "Стоимость должен быть от 1 до 10000")]
         public double Cost { get; set; }
 
         public List<RoomsFeatures>? RoomFeatures { get; set; }
 
+        [Display(Name = "ID отеля")]
         [Required(ErrorMessage = "Не указан ID отеля")]
         [Range(1, 100, ErrorMessage = "ID отеля должен быть от 1 до 100")]
         public int HotelId { get; set; }
