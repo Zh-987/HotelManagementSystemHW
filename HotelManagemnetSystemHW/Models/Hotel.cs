@@ -27,6 +27,8 @@ namespace HotelManagemnetSystemHW.Models
 
         public List<Room>? Rooms { get; set; }
 
+        public Hotel() { }
+
         public Hotel(int id, string name, string image, string description, int rating, List<Room>? rooms)
         {
             Id = id;

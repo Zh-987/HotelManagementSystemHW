@@ -2,7 +2,42 @@
     ViewData["Title"] = "Admin Page";
 }
 
+@model IEnumerable<HotelManagemnetSystemHW.Models.User>
+
 <div class="text-center">
     <h1 class="display-4">Admin Page</h1>
 </div>
 
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+            <th scope="col">DateOfBirth</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Country</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach(User user in Model){
+   <tr>
+
+            <td>@user.Id</td>
+            <td>@user.Fullname</td>
+            <td>@user.Username</td>
+            <td>@user.Password</td>
+            <td>@user.DateOfBirth</td>
+            <td>@user.Sex</td>
+            <td>@user.Email</td>
+            <td>@user.Phone</td>
+            <td>@user.Country</td>
+            <td>@user.Role</td>
+   </tr>
+}
+    </tbody>
+</table>

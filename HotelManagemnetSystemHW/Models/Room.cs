@@ -6,7 +6,7 @@ namespace HotelManagemnetSystemHW.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "ID пользователя")]
+        [Display(Name = "Имя комнаты")]
         [Required(ErrorMessage = "Не указано имя")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Имя должно быть от 2 до 50 символов")]
         public string Name { get; set; }
@@ -43,6 +43,8 @@ namespace HotelManagemnetSystemHW.Models
         public List<Image>? Images { get; set; }
 
         public List<Reservation>? Reservations { get; set; }
+
+        public Room() { }
 
         public Room(int id, string name, string description, int personCount, int square, double cost, List<RoomsFeatures>? roomFeatures, int hotelId, Hotel? hotel, List<Image>? images, List<Reservation>? reservations)
         {

@@ -23,6 +23,8 @@ namespace HotelManagemnetSystemHW.Models
 
         public Room? Room { get; set; }
 
+        public Image() { }
+
         public Image(int id, string name, bool isMain, int roomId, Room? room)
         {
             Id = id;

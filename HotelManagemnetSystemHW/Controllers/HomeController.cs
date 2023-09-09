@@ -9,11 +9,17 @@ namespace HotelManagemnetSystemHW.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationContext db;
+        //public HomeController(ApplicationContext context)
+        //{
+        //    db = context;
+        //}
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationContext context)
         {
             _logger = logger;
+            db = context;
         }
 
         public IActionResult Index()

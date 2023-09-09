@@ -1,14 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using HotelManagemnetSystemHW.Models;
+using Microsoft.AspNetCore.Mvc;
+ 
 namespace HotelManagemnetSystemHW.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class AdminController : Controller
     {
+        ApplicationContext db;
+        public AdminController(ApplicationContext context)
+        {
+            db = context;
+        }
+
         [Route("{area}")]
         public IActionResult Index()
         {
-            return View();
+            List<HotelManagemnetSystemHW.Models.User> users = db.users.ToList();
+            return View(users);
         }
 
         public IActionResult HttpHeaders()

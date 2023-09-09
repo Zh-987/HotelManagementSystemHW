@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HotelManagemnetSystemHW.Models.User
+
+<form method="post">
+    <div>
+
+        <p>
+            <label asp-for="Fullname"></label><br />
+            <input id="Fullname" name="Fullname" asp-for="Fullname" />
+            <span asp-validation-for="Fullname" />
+
+        </p>
+        <p>
+            <label asp-for="Username"></label><br />
+            <input id="Username" name="Username" asp-for="Username" />
+            <span asp-validation-for="Username" />
+
+        </p>
+        <p>
+            <label asp-for="Password"></label><br />
+            <input type="password" id="Password" name="Password" asp-for="Password" />
+            <span asp-validation-for="Password" />
+
+        </p>
+        <p>
+            <label asp-for="DateOfBirth"></label><br />
+            <input type="date" id="DateOfBirth" name="DateOfBirth" asp-for="DateOfBirth" />
+            <span asp-validation-for="DateOfBirth" />
+
+        </p>
+        <p>
+            <input name="sex" checked="checked" type="radio" value="Male">
+            <span>Male</span>
+            <input name="sex" type="radio" value="Female">
+            <span>Female</span>
+        </p>
+        <p>
+            <label asp-for="Email"></label><br />
+            <input type="email" id="Email" name="Email" asp-for="Email" />
+            <span asp-validation-for="Email" />
+
+        </p>
+        <p>
+            <label asp-for="Phone"></label><br />
+            <input type="tel" id="Phone" name="Phone" asp-for="Phone" />
+            <span asp-validation-for="Phone" />
+
+        </p>
+        <p>
+            <label asp-for="Country"></label><br />
+            <input id="country" name="Country" asp-for="Country" />
+            <span asp-validation-for="Country" />
+
+        </p>
+
+        <p>
+            <label asp-for="Role"></label><br />
+            <input checked="checked" name="Role" type="radio" value="user" asp-for="Role">
+            <span>User</span>
+            <input name="Role" type="radio" value="manager" asp-for="Role">
+            <span>Manager</span><br />
+            <input name="Role" type="radio" value="admin" asp-for="Role">
+            <span>Admin</span><br />
+            <span asp-validation-for="Role" />
+
+        </p>
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </div>
+</form>
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj",
         "projectName": "HotelManagemnetSystemHW",
-        "projectPath": "C:\\Users\\User\\source\\repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\HotelManagemnetSystemHW.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\HotelManagementSystemHW\\HotelManagemnetSystemHW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.15, )"

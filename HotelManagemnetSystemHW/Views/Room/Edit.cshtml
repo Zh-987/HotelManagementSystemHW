@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HotelManagemnetSystemHW.Models.Room
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Room</h1>
+
+<hr />
+
+<form asp-action="Edit" asp-controller="Room" asp-route-id="@Model.Id">
+    <div asp-validation-summary="All">
+        <div class="form-group">
+            <label asp-for="Name">  </label>
+            <input type="text" asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input type="text" asp-for="Description" />
+            <span asp-validation-for="Description"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PersonCount"></label>
+            <input type="int" asp-for="PersonCount" />
+            <span asp-validation-for="PersonCount"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Square"></label>
+            <input type="int" asp-for="Square" />
+            <span asp-validation-for="Square"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cost"></label>
+            <input type="double" asp-for="Cost" />
+            <span asp-validation-for="Cost"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="HotelId"></label>
+            <input type="int" asp-for="HotelId" />
+            <span asp-validation-for="HotelId"></span>
+        </div>
+        
+
+        <div class="form-group">
+            <input type="submit" value="Save" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

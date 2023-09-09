@@ -18,6 +18,8 @@ namespace HotelManagemnetSystemHW.Models
 
         public Room? Room { get; set; }
 
+        public RoomsFeatures() { }
+
         public RoomsFeatures(int id, int featureId, int roomId, Room? room)
         {
             Id = id;

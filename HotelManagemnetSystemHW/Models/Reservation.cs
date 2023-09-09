@@ -41,6 +41,8 @@ namespace HotelManagemnetSystemHW.Models
 
         public Room? Room { get; set; }
 
+        public Reservation() { }
+
         public Reservation(int id, DateTime checkIn, DateTime checkOut, int elders, int children, string userId, int roomId, User? user, Room? room)
         {
             Id = id;

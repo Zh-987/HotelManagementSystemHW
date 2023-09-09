@@ -2,6 +2,31 @@
     ViewData["Title"] = "User Page";
 }
 
+@model IEnumerable<HotelManagemnetSystemHW.Models.Room>
+
 <div class="text-center">
     <h1 class="display-4">User Page</h1>
 </div>
+
+@{
+    int counter = 0;
+}
+
+@foreach(Room room in Model){
+    if(counter % 2 == 0)
+    {
+        <br/>
+    }
+    <div style="display:inline-block">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">@room.Name</div>
+          <div class="card-body">
+                <h5 class="card-title">Описание: @room.Description</h5>
+                <p class="card-text">Цена: @room.Cost</p>
+                <p class="card-text">Площадь: @room.Square</p>
+                <p class="card-text">Количество мест: @room.PersonCount</p>
+          </div>
+        </div>
+    </div>
+    counter++;
+}

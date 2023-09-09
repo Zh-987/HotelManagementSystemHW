@@ -1,7 +1,53 @@
 ﻿@{
     ViewData["Title"] = "Room Page";
 }
+@model IEnumerable<HotelManagemnetSystemHW.Models.Room>
 
 <div class="text-center">
     <h1 class="display-4">Room Page</h1>
 </div>
+<a asp-action="CreateRoom" asp-asp-controller="Room" class="btn btn-success">Add room</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">PersonCount</th>
+            <th scope="col">Square</th>
+            <th scope="col">Cost</th>
+            <th scope="col">RoomFeatures</th>
+            <th scope="col">HotelId</th>
+            <th scope="col">Hotel</th>
+            <th scope="col">Images</th>
+            <th scope="col">Reservations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Room room in Model)
+        {
+            <tr>
+
+                <td>@room.Id</td>
+                <td>@room.Name</td>
+                <td>@room.Description</td>
+                <td>@room.PersonCount</td>
+                <td>@room.Square</td>
+                <td>@room.Cost</td>
+                <td>@room.RoomFeatures</td>
+                <td>@room.HotelId</td>
+                <td>@room.Hotel</td>
+                <td>@room.Images</td>
+                <td>@room.Reservations</td>
+                <td><a asp-action="Edit" asp-controller="Room" asp-route-id="@room.Id" class="btn btn-primary">Edit</a></td>
+                <td>
+                    <form asp-action="Delete" asp-asp-controller="Room" method="post" asp-route-id="@room.Id">
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

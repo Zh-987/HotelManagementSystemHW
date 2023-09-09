@@ -4,6 +4,7 @@
 @{
 }
 
+@model HotelManagemnetSystemHW.Models.RoleEnum
 
 <h2>Register Form</h2>
 
@@ -41,6 +42,15 @@
     <p>
         <label>Country:</label>
         <input type="text" name="country" /> <br />
+    </p>
+
+    <p>
+        <input checked="checked" name="role" type="radio" value="user">
+        <span>User</span>
+        <input name="role" type="radio" value="manager">
+        <span>Manager</span><br />
+        <input name="role" type="radio" value="admin">
+        <span>Admin</span><br />
     </p>
 
   
