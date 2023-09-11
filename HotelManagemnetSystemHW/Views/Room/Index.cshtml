@@ -1,31 +1,56 @@
 ﻿@{
     ViewData["Title"] = "Room Page";
 }
-@model IEnumerable<HotelManagemnetSystemHW.Models.Room>
+@*@model IEnumerable<HotelManagemnetSystemHW.Models.Room>*@
+
+@model HotelManagemnetSystemHW.Models.RoomListViewModel
+
 
 <div class="text-center">
     <h1 class="display-4">Room Page</h1>
 </div>
+
+
+<form method="get">
+    <div>
+        <label>Name: </label>
+        <input asp-for="Name" />
+
+        <label>Cost: </label>
+        <input asp-for="Cost" />
+
+        <label>Square: </label>
+        <input asp-for="Square" />
+
+
+        <label>Person Count: </label>
+        <select name="personsCount" asp-items="Model.PersonsCount"></select>
+
+        <input type="submit" value="Фильтр" />
+    </div>
+</form>
+
+
 <a asp-action="CreateRoom" asp-asp-controller="Room" class="btn btn-success">Add room</a>
 
 <table class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">PersonCount</th>
-            <th scope="col">Square</th>
-            <th scope="col">Cost</th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.IdSort">Id</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSort">Name</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.DescriptionSort">Description</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.PersonCountSort">PersonCount</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.SquareSort">Square</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.CostSort">Cost</a></th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.HotelIdSort">HotelId</a></th>
             <th scope="col">RoomFeatures</th>
-            <th scope="col">HotelId</th>
             <th scope="col">Hotel</th>
             <th scope="col">Images</th>
             <th scope="col">Reservations</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (Room room in Model)
+        @foreach (Room room in Model.Rooms)
         {
             <tr>
 
@@ -51,3 +76,22 @@
         }
     </tbody>
 </table>
+
+<p>
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+           class="glyphicon glyphicon-chevron-left">
+            Назад
+        </a>
+    }
+    @if (Model.PageViewModel.HasNextPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+           class="glyphicon glyphicon-chevron-right">
+            Вперед
+        </a>
+    }
+</p>

@@ -2,29 +2,59 @@
     ViewData["Title"] = "Admin Page";
 }
 
-@model IEnumerable<HotelManagemnetSystemHW.Models.User>
+@model HotelManagemnetSystemHW.Models.UserListViewModel
+
+<style>
+    .glyphicon {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .glyphicon-chevron-right:after {
+        content: "\00BB";
+    }
+
+    .glyphicon-chevron-left:before {
+        content: "\00AB";
+    }
+</style>
 
 <div class="text-center">
     <h1 class="display-4">Admin Page</h1>
 </div>
 
+<form method="get">
+    <div>
+        <label>Username: </label>
+        <input asp-for="Username" />
+
+        <label>Role: </label>
+        <input asp-for="Role" />
+
+        <label>Country: </label>
+        <select name="country" asp-items="Model.Countries"></select>
+
+        <input type="submit" value="Фильтр" />
+    </div>
+</form>
+
 <table class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Fullname</th>
-            <th scope="col">Username</th>
-            <th scope="col">Password</th>
-            <th scope="col">DateOfBirth</th>
-            <th scope="col">Sex</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Country</th>
-            <th scope="col">Role</th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.IdSort">Id</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.FullnameSort">Fullname</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.UsernameSort">Username</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.PasswordSort">Password</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.DateOfBirthSort">DateOfBirth</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.SexSort">Sex</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.EmailSort">Email</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.PhoneSort">Phone</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.CountrySort">Country</a> </th>
+            <th scope="col"><a asp-action="Index" asp-route-sortOrder="@ViewBag.RoleSort">Role</a> </th>
         </tr>
     </thead>
     <tbody>
-@foreach(User user in Model){
+@foreach(User user in Model.Users){
    <tr>
 
             <td>@user.Id</td>
@@ -41,3 +71,22 @@
 }
     </tbody>
 </table>
+
+<p>
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+           class="glyphicon glyphicon-chevron-left">
+            Назад
+        </a>
+    }
+    @if (Model.PageViewModel.HasNextPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+           class="glyphicon glyphicon-chevron-right">
+            Вперед
+        </a>
+    }
+</p>
